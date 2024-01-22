@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A team builder tool for the mainline Pokémon games.">
+    <title>Pokémon Team Builder</title>
+    <link rel="icon" type="image/x-icon" href="\Users\Privat\OneDrive\Dokumente\Schule\WMC_23_24\sj23-24-wmc1-tod\icon"> <!--mein icon geht nicht.-->    
+    <link rel="stylesheet" href="pokemon.css">
+</head>
+<body>
+<article class="team-builder">
+    <template id="team-slot">
+        <li class="slot slot_empty" data-slug="" data-type="" >
+            <div class="slot_remove-button slot_bg-type-1">
+                <figure class="slot_bg-type-2"><img class="slot_pokemon-render" src="" alt=""></figure>
+            </div>
+            <div class="slot_info">
+                <div class="slot_name-container">
+                    <span class="slot_name">???</span>
+                    <span class="slot_form slot_form_none"></span>
+                </div>
+                <ol class="slot_type-container">
+                    <li class="slot_type"></li>
+                    <li class="slot_type"></li>
+                </ol>
+            </div>
+            <div class="slot_toggle-container">
+                <button class="slot_toggle slot_toggle_hidden slot_toggle_female" title="Toggle Gender">&female;</button>
+                <button class="slot_toggle slot_toggle_hidden slot_toggle_regular" title="Toggle Shiny">✨</button>
+            </div>
+        </li>
+    </template>
+    <template id="tally">
+        <li class="tally">
+            <span class="tally_type-symbol">???</span>
+            <ol class="tally_marks">
+                <li class="tally_mark" data-slug="">0</li>
+                <li class="tally_mark" data-slug="">0</li>
+                <li class="tally_mark" data-slug="">0</li>
+                <li class="tally_mark" data-slug="">0</li>
+                <li class="tally_mark" data-slug="">0</li>
+                <li class="tally_mark" data-slug="">0</li>
+            </ol>
+        </li>
+    </template>
+    <div class="head">
+        <header class="head_header">
+            <h1 class="head_heading"><a href="../"><span class="head_game-name">Pokémon</span> Team Builder</a></h1>
+            <p>Use this tool to build your team for an in-game run. Click on a Pokémon below to add it to your team, and click on it again to remove it. Have fun and share with your friends!</p>
+        </header>
+        <p class="type-analysis__note">Blue tally marks indicate resistances, immunities, or <abbr title="Same-Type Attack Bonus">STAB</abbr> coverage. Red tally marks indicate weakness.</p>
+    </div>
+    <div class="tail">
+        <footer class="tail_footer">
+            <p class="footer_feedback">Please report bugs or leave feedback by contact the administrator via e-mail: &lt;<a href="TOD20571@spengergasse.at">TOD20571@spengergasse.at</a>&gt;.</p>
+            <p>
+                © by Alex <br>
+                Pokémon is © of Nintendo, <time datetime="1995">1995</time>-<time datetime="2023">2023</time>
+            </p>
+        </footer>
+    </div>
+</article>
+</body>
+</html>
