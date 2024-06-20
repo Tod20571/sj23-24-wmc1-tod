@@ -1,0 +1,325 @@
+/* General body styling */
+body {
+    background-color: #f0f0f0;
+    font: 16px/1.5 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    }
+    
+    /* Navigation menu styling */
+    .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    }
+    
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+    display: none;
+    }
+    
+    /* Style navigation menu links */
+    .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    }
+    
+    /* Style the hamburger menu */
+    .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    .topnav a
+    {
+    background-color: #ddd;
+    color: black;
+    }
+    
+    /* Style the active link (or home/logo) */
+    .active {
+    background-color: pink;
+    color: white;
+    }
+    
+    /* Heading and general text styling */
+    body, a, a
+    , a
+    , caption {
+    color: #333;
+    }
+    
+    h1, h2, h3 {
+    font-weight: 700;
+    text-align: center;
+    }
+    
+    h1 {
+    color: #ff69b4;
+    font-size: 2em;
+    margin: 0 0 1em;
+    }
+    
+    h2 {
+    background: #f0f0f0;
+    background: linear-gradient(0deg, rgba(246, 246, 246, 1) 50%, rgba(240, 240, 240, 1) 50%);
+    color: #4d6ad8;
+    font-size: 1.5em;
+    text-align: left;
+    display: inline-block;
+    margin: 0 0 0.5em;
+    position: absolute;
+    top: -0.75em;
+    left: 1em;
+    }
+    
+    h3 {
+    font-size: 1em;
+    line-height: 2;
+    margin: 2em 0 0;
+    }
+    
+    h1 a {
+    text-decoration: none;
+    color: inherit;
+    }
+    
+    p {
+    text-align: center;
+    font-size: 0.875em;
+    }
+    
+    /* Article and section styling */
+    article {
+    background-color: #f0f0f0;
+    max-width: 81.875em;
+    padding: 0 1.25em;
+    margin: 1em auto;
+    }
+    
+    article section {
+    background: #f6f6f6;
+    border-radius: 1em;
+    border: 0.0625em solid #dedede;
+    padding: 1.25em 1em 1em;
+    margin: 0 auto 1.25em;
+    position:relative
+    }
+    
+    /* Game picker styling */
+    .head_game-picker {
+    padding: 2em;
+    }
+    
+    .head_game-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    }
+    
+    .head_game-logo,
+    .game-picker_game-logo {
+    width: 14rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    margin: 0.75em 0;
+    }
+    
+    .head_game-logo_gsc,
+    .game-picker_game-logo_gsc {
+    width: 10rem;
+    height: 5rem;
+    line-height: 5rem;
+    margin: 0;
+    }
+    
+    .head_game-logo_rby,
+    .game-picker_game-logo_rby {
+    width: 10.5rem;
+    height: 1.875rem;
+    line-height: 1.875rem;
+    margin: 1.5625rem 0;
+    }
+    
+    .head_game-logo_rse,
+    .game-picker_game-logo_rse,
+    .head_game-logo_dppt,
+    .game-picker_game-logo_dppt {
+    width: 13rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin: 1.25em 0;
+    }
+    
+    .head_game-logo_frlg,
+    .game-picker_game-logo_frlg {
+    width: 11.5rem;
+    height: 3.25rem;
+    line-height: 3.25rem;
+    margin: 0.875em 0;
+    }
+    
+    .head_game-logo {
+    display: block;
+    text-indent: -999em;
+    }
+    
+    .game-picker {
+    list-style: none;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fill, 16em);
+    justify-content: center;
+    padding: 0;
+    margin: 2em 0;
+    }
+    
+    
+    .game-picker_button {
+    display: block;
+    background: #fff;
+    text-align: center;
+    width: 16em;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.5em;
+    background: #d9d9d9;
+    }
+    
+    .button-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 100px); /* Adjust button width as needed */
+        gap: 10px;
+        margin: 20px;
+        justify-content: center;
+    }
+    
+    .grid-button {
+        position: relative;
+        width: 100px; /* Adjust button width */
+        height: 100px; /* Adjust button height */
+        background-color: #fff; /* Button background color */
+        border: 2px solid #ccc; /* Button border */
+        overflow: hidden; /* Hide overflow to prevent image overflow */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+    }
+    
+    .grid-button img {
+        max-width: 100%; /* Ensure image does not exceed button size */
+        max-height: 100%; /* Ensure image does not exceed button size */
+        object-fit: contain; /* Maintain aspect ratio */
+    }
+
+    .button-grid .grid-button {
+    background-color: pink;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    }
+
+    
+    #pokemon-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    }
+    
+    ol{
+    list-style-type: none;
+    }
+    
+    .pokedex-entry_button img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+    
+    .pokedex-entry_button {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #fff; /* Button background color /
+    border: 2px solid #ccc; / Button border /
+    overflow: hidden; / Hide overflow to prevent image overflow */
+    }
+    
+    .button-entry {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .button-entry {
+    margin: 0;
+    padding: 0;
+    }
+    
+    .picker_pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    }
+    
+    .picker_pokedex-container {
+    flex: 1 1 150px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    }
+    
+    /* FAQ */
+    .head_faq dl {
+    margin: 2em;
+    }
+    
+    .head_faq dl p {
+    text-align: left;
+    margin: 1em 0;
+    max-width: none;
+    }
+    
+    .head_faq abbr {
+    text-decoration: none;
+    }
+    
+    dt {
+    font-weight: 700;
+    }
+    
+    /* Footer */
+    .tail_footer {
+    font-size: 0.75em;
+    text-align: right;
+    }
+    
+    .footer_feedback {
+    text-align: center;
+    }
